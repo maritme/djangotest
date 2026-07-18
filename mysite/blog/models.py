@@ -20,7 +20,7 @@ class Post(models.Model):
         return self.title
 
 class Voetbalspelers(models.Model):
-    naam = models.Charfield(max_length = 75)
+    naam = models.CharField(max_length = 75)
     voetbalclub = models.CharField(max_length = 50)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     created_date = models.DateTimeField(default=timezone.now)
