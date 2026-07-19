@@ -17,6 +17,7 @@ class Post(models.Model):
        return self.title
 
 class voetballers(models.Model):
+    title = models.CharField(max_length = 50)
     naam = models.CharField(max_length = 50)
     voetbalclub = models.CharField(max_length = 50)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
