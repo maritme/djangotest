@@ -4,4 +4,3 @@ from .models import voetballers
 # Register your models here.
 
 admin.site.register(Post)
-admin.site.register(voetballers)
