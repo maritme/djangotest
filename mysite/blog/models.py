@@ -29,3 +29,6 @@ class Voetbalspelers(models.Model):
     def publish(self):
         self.publish = timezone.now()
         self.save()
+        
+    def __str__(self):
+        return self.title
